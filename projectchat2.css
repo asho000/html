@@ -47,10 +47,6 @@ body {
     background-color: rgb(27, 20, 20);}
   }
 
-  /* @media  and (max-width:2784px) and(min-width:){
-  
-} */
-
   .person:hover {
     transition: 1s ease;
     background-color: darkolivegreen;
