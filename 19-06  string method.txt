@@ -1,0 +1,42 @@
+                      19-06
+
+
+
+  * function name(){
+    let a="kumar";
+    let b=a.charCodeAt(0);
+    console.log(String.fromCharCode(b-1))
+     }
+    name();
+    o/p:- J
+
+
+*   function name(){
+    let a="    ashok    kumar         ";
+    let b=a.trim();
+    c=0;
+    s="";
+    for(i=0;i<b.length;i++){
+        if(b[i]!=' '){
+            s=s+b[i];
+        }
+        else if(b[i]==' '&&c==0){
+            s=s+b[i];
+            c++;
+        }
+
+    }
+    console.log(s);
+    }
+    name();
+    o/p-Ajay Reddy
+
+
+*   let a="ashok"
+    s=" ";
+    for(i=0;i<a.length;i++){
+    s=a[i]+s
+    }
+    console.log(s)
+
+    o/p:- kohsa   
