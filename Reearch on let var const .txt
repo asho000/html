@@ -1,0 +1,14 @@
+      Reearch on let var const 
+
+
+let:- he let keyword was introduced in ES6 (2015)
+
+      *. Block Scope
+      *. we cant redeclare
+      
+var:- 
+      *. global scope
+      *. we can reassign ang redeclare
+const:-
+      *. block sope
+      *. cant reassign and redeclare
