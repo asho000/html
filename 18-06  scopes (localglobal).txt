@@ -1,0 +1,39 @@
+                            18-06  scopes (local/global)
+
+
+      * var x=10;
+        function foo(){
+            var x=20;
+            console.log(x);
+        }
+        foo();
+        
+        o/p:-20
+
+
+      *  var a=10;
+        function foo(){
+            console.log(a);
+        } 
+        var a=20;
+        foo();
+        
+        o/p:-20
+
+     *  function foo(){
+            console.log(x);
+        }
+        var x =10;
+        foo();
+        
+        o/p:- 10
+        
+
+       
+     *  function foo() {
+            console.log(x);
+        }
+        foo();
+        var x = 10;
+        
+        o/p:-undefined
