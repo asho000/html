@@ -1,0 +1,76 @@
+
+                 
+
+
+
+/ const arr1=[1,2,3]
+// const arr2=[4,5,6]
+// mergedArr=arr1.concat(arr2)
+// console.log(mergedArr)
+
+o/p:- [1,2,3,4,5,6]
+
+
+ const arr=[1, [2, [3,[4]]]];
+ flattened=arr.flat(Infinity);
+ console.log(flattened)
+
+o/p:- [1,2,3,4]
+
+
+ const arr=[1,2,3,4,5]
+ element=arr.splice(1,1,'a','b')
+ console.log(arr)//[1,2,3,a,b,5]
+ console.log(element)//[3 4]
+
+o/p:-[1,2,3,a,b,5]
+     [3 4]
+
+
+// const arr=[1,2,3,4,5]
+// const arr1=arr.slice(1,4)
+// console.log(arr1)
+
+o/p:-[2,3,4]
+
+const array1 = [1, 2, 3, 4, 5];
+const array = array1.slice(0, 1).concat(['a', 'b'], array1.slice(3));
+
+console.log(array); 
+
+o/p:- [ 1, 'a', 'b', 4, 5 ]
+
+const arr=[1,2,3,4,5]
+arr.copyWithin(0,3,5)
+console.log(arr)
+o/p:- [ 4, 5, 3, 4, 5 ]
+
+
+const arr=[1,2,3,4,5]
+const index=arr.indexOf(3)
+console.log(index)
+
+o/p:-2
+
+
+const arr=[1,2,3,4,5,6]
+const arr1=arr.includes(3)
+console.log(arr1)
+
+o/p:-true
+
+const arr=[1,2,3,2,1]
+const arr1=arr.lastIndexOf(2)
+console.log(arr1)
+
+
+o/p:- 3
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const mergedArray = array1.concat(array2).flat();
+const splicedArray = mergedArray.toSpliced(2, 1, 'a');
+const finalArray = splicedArray.slice(1, 5);
+console.log(finalArray.includes('a')); //true
+
+
