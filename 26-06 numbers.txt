@@ -1,0 +1,30 @@
+                     26-06
+
+
+// 1)  check how isNaN works in different scenario
+console.log(isNaN(2))//false
+
+console.log(isNaN("ajay"))//true
+let x="2ks"
+y=Number(x)
+console.log(isNaN(y))
+let z
+console.log(isNaN(z))
+
+
+// , 2) study types of coercion
+//Number to  String-1.String()
+                    // 2.Number+""
+//String to Number-1.Number()
+//                  2.+ or - before string
+
+// 3) write a program to print a random otp
+function otp(n){
+    s=""
+    for(i=0;i<n;i++){
+        k=Math.floor(Math.random()*10)
+        s=s+k
+    }
+    console.log(s)
+}
+otp(4)//2343
