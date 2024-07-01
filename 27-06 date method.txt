@@ -1,0 +1,50 @@
+               27-06
+
+
+// 1) Write a function that displays the current date and time in the format YYYY-MM-DD HH:MM:SS.
+function f1(){
+    let d=new Date()
+    console.log(d)
+}
+f1();
+
+
+// 2) Write a function that calculates the number of days between two dates.
+// function f1(){
+//     d1=new Date("2022-07-14T16:00:00")
+//     d2=new Date("2024-07-14T16:00:00")
+//     a1=d1.getYear()
+//     a2=d2.getYear()
+//     let days=0
+//     diff=a2-a1
+//     if(diff>0){
+//         days=diff*365
+//     }
+//         x=(d2.getDate()-d1.getDate())+days
+//     console.log(x+" Days") 
+
+// }
+// f1();
+
+// 3) Write a function that returns the day of the week for a given date
+function f3(){
+    d=new Date()
+    x=d.getDay()
+    switch(x){
+        case 0: console.log("Sunday")
+        break
+        case 1: console.log("Monday")
+        break
+        case 2: console.log("tuesday")
+        break
+        case 3: console.log("Wednesday")
+        break
+        case 4: console.log("Thursday")
+        break
+        case 5: console.log("Friday")
+        break
+        case 6: console.log("Saturday")
+        break
+    }
+}
+f3()//Friday
