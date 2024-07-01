@@ -1,0 +1,111 @@
+                           25-06
+
+
+// 1.Write a function that takes an array of objects as an argument and returns an array of the keys of each object using for...in iteration.
+
+// Input: [{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }]
+// Output: [["a", "b"], ["c", "d"], ["e", "f"]]
+function obj1(arr){
+    ar=[]
+    for( i in arr){
+        a=[]
+        for(j in arr[i]){
+            a.push(j)
+        }
+        ar.push(a)
+    }
+    console.log(ar)
+}
+a=[{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }]
+obj1(a)  //o/p:[ [ 'a', 'b' ], [ 'c', 'd' ], [ 'e', 'f' ] ]
+
+// 2.Write a function that takes an array of objects as an argument and returns an array of the values of each object using for...in iteration.
+
+// Input: [{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }]
+// Output: [[1, 2], [3, 4], [5, 6]]
+function obj2(arr){
+    ar=[]
+    for( i in arr){
+        a=[]
+        for(j in arr[i]){
+            a.push(arr[i][j])
+        }
+        ar.push(a)
+    }
+    console.log(ar)
+}
+a=[{ a: 1, b: 2 }, { c: 3, d: 4 }, { e: 5, f: 6 }]
+obj2(a)  //o/p:[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
+
+// 3.Write a function that takes an array of objects as an argument and returns a new array with only the objects that have a specific property using for...in iteration.
+
+// Input: [{ a: 1 }, { b: 2 }, { a: 3, b: 4}], "a"
+// Output: [{ a: 1 }, { a: 3, b: 4 }]
+function obj3(arr,value){
+    ar=[]
+    for( i in arr){
+        if((arr[i]).hasOwnProperty(value)){
+            ar.push(arr[i])
+        }
+    }
+    console.log(ar)
+}
+a=[{ a: 1 }, { b: 2 }, { a: 3, b: 4}]
+aa="a"
+obj3(a,aa)//o/p:[ { a: 1 }, { a: 3, b: 4 } ]
+
+// 4.Write a function that takes an array of objects as an argument and returns a new array with the objects sorted by a specific property using for...in iteration.
+
+// Input: [{ a: 2 }, { a: 1 }, { a: 3 }], "a"
+// Output: [{ a: 1 }, { a: 2 }, { a: 3 }]
+function obj4(arr,value){
+    for( i in arr){
+        for(j=0;j<arr.length-1;j++){
+            if(arr[j][value]>arr[j+1][value]){
+                temp=arr[j][value]
+                arr[j][value]=arr[j+1][value]
+                arr[j+1][value]=temp
+            }
+        }
+        
+    }
+    console.log(arr)
+}
+q=[{ a: 2 }, { a: 1 }, { a: 3 }]
+qq="a"
+obj4(q,qq)//[ { a: 1 }, { a: 2 }, { a: 3 } ]
+
+function sort(){
+    a=[4,2,3,1,5]
+    for(i=0;i<a.length;i++){
+        for(j=0;j<a.length-1;j++){
+            if(a[j]>a[j+1]){
+                temp=a[j]
+                a[j]=a[j+1]
+                a[j+1]=temp
+            }
+        }
+    }
+    console.log(a)
+}
+sort();
+
+
+// 5.Write a function that takes an array of objects as an argument and returns a new object with the properties from all the objects in the array using for...in iteration.
+
+// Input: [{ a: 1 }, { b: 2 }, { c: 3 }]
+// Output: { a: 1, b: 2, c: 3 }
+function obj5(arr){
+    res={}
+    for( i in arr){
+        for(j in arr[i]){
+            res[j]=arr[i][j]
+        }
+    }
+    console.log(res)
+}
+k=[{ a: 1 }, { b: 2 }, { c: 3 }]
+obj5(k)//o/p:{ a: 1, b: 2, c: 3 }
+
+
+
