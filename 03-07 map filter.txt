@@ -1,0 +1,47 @@
+                              03-07
+
+/1. Given an array of numbers, use the map function to create a new array where each number is doubled.//
+
+// const num=[2,4,5,6,7]
+// x=num.map(a=>a*2)
+// console.log(x)
+
+//[ 4, 8, 10, 12, 14 ]
+
+
+//2. Given an array of names, use the forEach function to print each name in the console.
+
+// arr=["ashok","srinu","mahesh","kumar"]
+// arr.forEach(a=>console.log(a))
+
+// ashok
+//srinu
+//mahesh
+//kumar
+
+
+// 3. Given an array of numbers, use the filter function to create a new array that contains only the even numbers.
+// num=[1,2,3,4,5,6,6,7,8,9]
+// x=num.filter(a=>a%2==0)
+// console.log(x)
+
+//[ 2, 4, 6, 6, 8 ]
+
+//4. Given an array of objects representing students with their names and scores, use the map function to create a new array of strings that says "Name has scored Score".  
+
+
+// const students = [
+//   { name: 'Ashok', score: 85 },
+//   { name: 'srinu', score: 92 },
+//   { name: 'mahesh', score: 88 }
+// ];
+
+// x=students.map((name1)=>name1.name+" "+"has scored:"+name1.score)
+// console.log(x);
+// x=students.map(score)
+// function score(name1){
+//     return name1.name+"has scored"+name1.score
+// }
+
+
+//[ 'ashok has scored:85', 'srinu has scored:92', 'kumar has scored:88' ]
